@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            *{box-sizing:border-box;}
+            
+            body {
+                font-family: fantasy;
+                width: 960px;
+                margin: 0 auto;
+            }
+            header {
+                background-color: rebeccapurple;
+                padding: 20px;
+                text-align: center;
+                font-size: 30px;
+                color: white;
+            }
+            nav {
+                float: left;
+                width: 30%;
+                height: 300px;
+                background-color: lightgrey;     
+                padding: 20px;
+            
+            }
+            nav ul {
+                list-style: none;
+                padding: 0px;
+            }
+            article {
+                float: left;
+                width: 70%;
+                height: 300px;
+                background-color: grey;
+                padding: 20px;
+            }
+            /* section:after {
+                content: "";
+                display: table;
+                clear: both;
+
+            } */
+            footer {
+                background-color: khaki;
+                padding: 20px;
+                text-align: center;
+                height: 60px;
+            }
+            a:hover{
+                background-color: white;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>자바 커리큘럼</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="content/htmlContent.html" target="_blank">HTML</a></li>
+                <li><a href="content/cssContent.html"  target="_blank">CSS</a></li>
+                <li><a href="content/oracleContent.html" target="_blank">Oracle</a></li>
+                <li><a href="content/javaContent.html"  target="_blank">Java</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>HTML</h1>
+            <p>"Hyper Text Mark-up Language" 의 약자. 웹 페이지의 모습을 기술하기 위한 규약.</p>
+            <p>HTML은 서버에서 보내오는 정보대로 페이지를 그려내는 것에는 강하지만 반대로 사용자의 입력에 민감하게 반응하여 페이지를 그리는 것에는 약한 편이다. 또한 동적인 화면 구성이 힘들다는 약점도 있다. 이러한 면을 보완하기 위하여 JavaScript 등의 각종 스크립트의 도움을 받으며, 요즘 유행하는 AJAX도 그런 면을 보완하기에 적합하다.</p>
+        </article>
+    </section>
+</body>
+</html>

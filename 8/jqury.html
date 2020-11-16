@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+          $(".inputcolorchange").focus(function(){
+            $(this).css("background-color", "yellow");
+          });
+          $('.inputcolorchange').blur(function(){
+            $(this).css("background-color", "white");
+          });
+        });
+      </script>
+
+      <script>
+        var wStatus = true;
+          $(document).ready(function(){
+            $("#regist").click(function(){
+              formCheckIt();//글쓰기 폼의 입력 여부 체크
+              if(wStatus){//입력란에 값을 모두 입력한 경우
+                //ajox 관련 코드 입력 
+               }
+           });          
+          });       
+    //글쓰기 폼의 입력값 유무 확인
+    function formCheckIt(){
+        wStatus = true;
+        if(!$.trim($("#writer").val())){
+        alert("작성자를 입력하세요.");
+        $("#writer").focus();
+        wStatus = false;
+        return false;
+        }
+        if(!$.trim($("#email").val())){
+        alert("이메일을 입력하세요.");
+        $("#email").focus();
+        wStatus = false;
+        return false;
+        }  
+
+      if(!$.trim($("#subject").val())){
+        alert("제목을 입력하세요.");
+        $("#subject").focus();
+        wStatus = false;
+        return false;
+        }
+      if(!$.trim($("#content").val())){
+        alert("내용을 입력하세요.");
+        $("#content").focus();
+        wStatus = false;
+        return false;
+        }
+
+    }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <body>
+        <h2>글 작성하기</h2>
+        <form action="">
+          <table>
+            <tr>
+              <th>작성자</th>
+              <td><input type="text" id="writer" class="inputcolorchange"></td>
+            </tr>
+            <tr>
+              <th>이메일</th>
+              <td><input type="text" id="email" class="inputcolorchange"></td>
+            </tr>
+            <tr>
+              <th>글제목</th>
+              <td><input type="text" id="subject" class="inputcolorchange"></td>
+            </tr>
+            <tr>
+              <th>내용</th>
+              <td><textarea name="" cols="30" rows="10" id="content" 
+                class="inputcolorchange"></textarea></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button id="regist" value="등록">등록</button>
+                <button id="cancle" value="취소">취소</button></td>
+            </tr>
+          </table>
+        </form>
+      </body>
+</body>
+</html>

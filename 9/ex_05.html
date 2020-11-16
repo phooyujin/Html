@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트</title>
+</head>
+<body>
+    <script>
+
+        // 합계를 구하고 평균을 내는 방법
+        var box;
+        var kor=100;
+        var eng=90;
+        var math=90;
+        var hap=kor+eng+math;
+        var avg=hap/3;
+        document.write ("합계:"+hap, "<br>")
+        document.write ("평균:"+avg, "<br>")
+        // A 학점 주는 방법
+        if (avg>=90) {
+            document.write ("A 학점입니다","<br>")
+        }
+        else if (avg>=80) {
+            document.write ("B 학점입니다","<br>")
+        }
+        else if (avg>=70) {
+            document.write ("C 학점입니다","<br>")
+        }
+        else if (avg>=60) {
+            document.write ("D 학점입니다","<br>")
+        }
+        else {
+            document.write ("F 학점입니다","<br>")
+        }
+
+    </script>
+</body>
+</html>

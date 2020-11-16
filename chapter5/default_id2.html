@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div 코드를 이용하여 다시 만들기</title>
+    <style>
+        .header {
+            background-color: darkolivegreen;
+            width: 800px;
+            margin: 0 auto;
+        }
+        .wrap {
+            width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .aside {
+            width: 200px; height: 100px; float: left;
+            background-color: olivedrab;
+        }
+        .content {
+            width: 600px; height: 100px; float:right;
+            background-color: olive;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"><h1>#header 태그</h1></div>
+    <div class="wrap">
+        <div class="aside"><h1>#aside 태그</h1></div>
+        <div class="content"><h1>#content 태그</h1></div>
+    </div>
+</body>
+</html>

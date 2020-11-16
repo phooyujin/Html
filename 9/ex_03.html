@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국영수 합계 평균</title>
+</head>
+<body>
+    <h2>국영수 합계 평균</h2>
+    <script>
+        var kor=prompt("국어 성적을 입력하세요.");
+        var eng=prompt("영어 성적을 입력하세요.");
+        var math=prompt("수학 성적을 입력하세요.");
+        var hap=parseInt(kor)+parseInt(eng)+parseInt(math);
+        var avg=hap/3;
+        document.write ("국어:"+kor, "<br>")
+        document.write ("영어:"+eng, "<br>")
+        document.write ("수학:"+math, "<br>")
+        document.write ("합계:"+hap, "<br>");
+        document.write ("평균:"+avg, "<br>");
+
+
+        if (avg>=90) {
+            document.write ("A 학점입니다");
+        }
+        else if (avg>=80) {
+            document.write ("B 학점입니다");
+        }
+        else if (avg>=70) {
+            document.write ("C 학점입니다");
+        }
+        else if (avg>=60) {
+            document.write ("D 학점입니다");
+        }
+        else {
+            document.write ("F 학점입니다");
+        }
+
+    </script>
+</body>
+</html>

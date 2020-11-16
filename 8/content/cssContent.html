@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            *{box-sizing:border-box;}
+            
+            body {
+                font-family: fantasy;
+                width: 960px;
+                margin: 0 auto;
+            }
+            header {
+                background-color: rebeccapurple;
+                padding: 20px;
+                text-align: center;
+                font-size: 30px;
+                color: white;
+            }
+            nav {
+                float: left;
+                width: 30%;
+                height: 300px;
+                background-color: lightgrey;     
+                padding: 20px;
+            
+            }
+            nav ul {
+                list-style: none;
+                padding: 0px;
+            }
+            article {
+                float: left;
+                width: 70%;
+                height: 300px;
+                background-color: grey;
+                padding: 20px;
+            }
+            /* section:after {
+                content: "";
+                display: table;
+                clear: both;
+
+            } */
+            footer {
+                background-color: khaki;
+                padding: 20px;
+                text-align: center;
+                height: 60px;
+            }
+            a:hover{
+                background-color: white;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>자바 커리큘럼</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="content/htmlContent.html" target="_blank">HTML</a></li>
+                <li><a href="content/cssContent.html"  target="_blank">CSS</a></li>
+                <li><a href="content/oracleContent.html" target="_blank">Oracle</a></li>
+                <li><a href="content/javaContent.html"  target="_blank">Java</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>CSS</h1>
+            <p>CSS의 C가 Cascading의 약자인데, 이는 상위 요소의 스타일 속성을 자손 요소들에게 상속시켜주는 모습이 DOM 트리구조에서 마치 폭포수처럼 내려가는 모습을 닮았기 때문이다.</p>
+            <p>이렇게 하면 디자인에 필요한 부분은 CSS가 전담하기 때문에 웹디자이너와 웹프로그래머 간의 협업이 훨씬 용이해진다. 
+                게다가 CSS는 HTML문서에 style태그 안에 삽입할 수도 있지만 별도의 파일로 분리하는 것도 가능해서 다른 HTML에서도 동일한 CSS를 사용할 수 있다. 즉 웹페이지를 제작할 경우 글꼴 등의 웹페이지의 스타일을 저장해두면 웹페이지의 한가지 요소만 변경해도 관련되는 전체 페이지의 내용을 한꺼번에 변경할수 있어 일관성을 유지하고 작업시간도 줄이고 트래픽을 줄이는 효과도 있다.</p>
+        </article>
+    </section>
+   
+</body>
+</html>

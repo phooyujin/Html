@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Property Basic</title>
+    <style>
+        .box {
+            width: 100px; height: 100px;
+            position: absolute;
+        }
+
+        .box:nth-child(1) {
+            background-color: rosybrown;
+            left: 10px; top: 10px;
+        }
+        .box:nth-child(2) {
+            background-color: saddlebrown;
+            left: 50px; top: 50px;
+            }
+        .box:nth-child(3) {
+            background-color: slategrey;
+            left: 90px; top: 90px;
+            }
+        body > div {
+            width: 400px; height: 100px;
+            border: 3px solid black;
+            position: relative;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h1>lorem ipsum dolor amet</h1>
+    <div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <h1>lorem ipsum dolor amet</h1>
+</body>
+</html>

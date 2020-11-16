@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 2</title>
+    <style>
+        *{box-sizing: border-box}
+        body {
+            width: 960px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0 auto;
+
+        }
+        header {
+            background-color: saddlebrown;
+            font-size: 50px;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            width: 30%;
+            height: 300px;
+            float: left;
+            background: firebrick;
+            padding: 20px;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        a:hover {
+            background: white;
+        }
+        article {
+            width: 70%;
+            height: 300px;
+            float: right;
+            background: darksalmon;
+            padding: 20px;
+        }
+        section::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        footer {
+            height: 60px;
+            background-color:sienna ;
+            padding: 20px;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <header>JAVA Curriculum</header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#" class="bt">HTML</a></li>
+                    <li><a href="#" class="bt">JAVA</a></li>
+                    <li><a href="#" class="bt">oracle</a></li>
+                    <li><a href="#" class="bt">CSS</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h3>자바 프로그램 과정</h3>
+                <p>자바는 약 5개월 정도 열심히 하므로 가능한 과정입니다. 특별히 출석 일수가
+                    80% 이상 되어야 수료 가능합니다.
+                </p>
+                <p>4개월 후에는 초급 개발자로서 좋은 회사에 취직 및 지원 가능합니다. 
+                    힘내서 6개월 뒤에 한국무역공사에 멋지게 취업 해서 꿈을 펼치자!</p>
+            </article>
+        </section>
+        <footer>&copy; copy right는 yujin han에게 있습니다.</footer>
+    
+</body>
+</html>
